@@ -1,0 +1,75 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type postSecretarie {
+  nombre: String!
+  apellido: String!
+  identificacion: String!
+}
+
+type Secretaria {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Empleado {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  findAllSecretaries: [postSecretarie!]!
+  administrador(id: Int!): postSecretarie!
+  findAllEmployees: [postSecretarie!]!
+  secretaria(id: Int!): Secretaria!
+  empleado(id: Int!): Empleado!
+}
+
+type Mutation {
+  createAdministrador(createAdministradorInput: CreateAdministradorInput!): postSecretarie!
+  updateAdministrador(updateAdministradorInput: UpdateAdministradorInput!): postSecretarie!
+  removeAdministrador(id: Int!): postSecretarie!
+  createEmployee(createAdministradorInput: CreateAdministradorInput!): postSecretarie!
+  updateEmployee(updateAdministradorInput: UpdateAdministradorInput!): postSecretarie!
+  removeEmployee(id: Int!): postSecretarie!
+  createSecretaria(createSecretariaInput: CreateSecretariaInput!): Secretaria!
+  updateSecretaria(updateSecretariaInput: UpdateSecretariaInput!): Secretaria!
+  removeSecretaria(id: Int!): Secretaria!
+  createEmpleado(createEmpleadoInput: CreateEmpleadoInput!): Empleado!
+  updateEmpleado(updateEmpleadoInput: UpdateEmpleadoInput!): Empleado!
+  removeEmpleado(id: Int!): Empleado!
+}
+
+input CreateAdministradorInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateAdministradorInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateSecretariaInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateSecretariaInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateEmpleadoInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateEmpleadoInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
